@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Semana de la ciencia</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Animate.css (animaciones dinámicas) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+          <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Elimina los espacios entre celdas */
+        }
+        th, td {
+            border: 2px solid #333; /* Bordes de las celdas más gruesos y oscuros */
+            text-align: left; /* Alineación del texto */
+            padding: 10px; /* Espaciado interno */
+        }
+        th {
+            background-color: #f2f2f2; /* Color de fondo para los encabezados */
+        }
+
+        /* Estilos para el botón con animación */
+        .btn-dinamico {
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animación al pasar el cursor */
+        .btn-dinamico:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 30px;">
+                <span class="text-primary">Semana de la ciencia 2024</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="single1.html" class="nav-item nav-link">11°D</a>
+                    <a href="single2.html" class="nav-item nav-link">11°E</a>
+                    <a href="single3.html" class="nav-item nav-link">11°F</a>
+                    <a href="single4.html" class="nav-item nav-link">11°G</a>
+                    <a href="single5.html" class="nav-item nav-link">11°H</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-3 font-weight-bold text-white">EL PULSO DE LA NATURALEZA</h3>
+            <div class="d-inline-flex text-white">
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Sección de botones con animaciones -->
+    <div class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-dinamico btn-block animate__animated" onclick="showSection('biologia')">Biología</button>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-dinamico btn-block animate__animated" onclick="showSection('quimica')">Química</button>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-dinamico btn-block animate__animated" onclick="showSection('fisica')">Física</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secciones ocultas al inicio -->
+    <div class="container py-5">
+        <!-- Sección Biología -->
+        <div id="biologia" style="display:none;">
+            <h1>FERMENTACIÓN</h1>
+            <img class="img-fluid rounded w-100 mb-4" src="img/ima2.jpg" alt="Image">
+            <a href="https://www.youtube.com/watch?v=zaOaL9iCyEw" target="_blank"><h3 style="color: red;">EL EXPERIMENTO SE ENCUENTRA AQUÍ</h3></a>
+            <p>La fermentación es un proceso metabólico que permite a los organismos obtener energía en ausencia de oxígeno.</p>
+            <p>Se utiliza ampliamente en la producción de alimentos y bebidas, como pan, cerveza y yogur.</p>
+            <p>Existen diferentes tipos de fermentación, como la fermentación alcohólica y la fermentación láctica, cada una con sus propias características y aplicaciones.</p>
+               <h1>EXPLICACIONES</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td> La fermentación es un proceso biológico fundamental que permite a los organismos obtener energía en ausencia de oxígeno.</td>
+                <td>Este mecanismo no sólo es crucial para la producción de alimentos y bebidas como pan y yogur, sino que también juega un papel importante en los ecosistemas al reciclar nutrientes.</td>
+                <td>Comprender la fermentación abre la puerta a la innovación en biotecnología y agricultura y promueve prácticas más sostenibles y eficientes en la producción de recursos alimentarios.</td>
+            </tr>
+        </tbody>
+    </table>
+     <br>
+    </br>
+
+<img class="img-fluid rounded w-100 mb-4" src="img/ima1.jpg" alt="Image">
+
+        </div>
+
+        <!-- Sección Química -->
+        <div id="quimica" style="display:none;">
+            <h2>PRESIÓN Y REACCIÓN</h2>
+            <img class="img-fluid rounded w-100 mb-4" src="img/ima3.jpg" alt="Image">
+             <a href="https://www.youtube.com/watch?v=d5cPXb-vcDk" target="_blank"><h3 style="color: red;">EL EXPERIMENTO SE ENCUENTRA AQUÍ</h3></a>
+             <p>La presión atmosférica es la fuerza que ejerce el aire sobre la superficie terrestre y tiene un impacto significativo en nuestra vida diaria.</p>
+            <p>Facilita la respiración al crear diferencias de presión, afecta la cocción de alimentos al influir en la temperatura de ebullición del agua y juega un papel crucial en el clima y la meteorología.</p>
+            <h1>CURIOSIDADES</h1>
+            <table>
+        <tbody>
+            <tr>
+                <td> La presión atmosférica es un fenómeno físico que influye en las actividades diarias y los procesos naturales, desde la respiración hasta la cocina, e ilustra la interconexión de los sistemas en nuestro entorno. </td>
+                <td>Por otro lado, la interacción entre el alcohol y el cloro en química es especialmente relevante en términos de seguridad, ya que su combinación puede ser peligrosa.</td>
+                <td>Cuando calentamos sustancias como el azúcar y la sal, observamos diferentes comportamientos: el azúcar se carameliza, cambiando su sabor y textura, mientras que la sal se disuelve en agua caliente, aumentando su solubilidad.</td>
+                  <td>Estos fenómenos ilustran la importancia de la física y la química en la vida cotidiana y la necesidad de un uso seguro y responsable de los productos químicos.</td>
+            </tr>
+        </tbody>
+    </table>
+         <br>
+    </br>
+
+<img class="img-fluid rounded w-100 mb-4" src="img/ima4.jpg" alt="Image">
+<img class="img-fluid rounded w-100 mb-4" src="img/ima5.jpg" alt="Image">
+
+        </div>
+
+        <!-- Sección Física -->
+        <div id="fisica" style="display:none;">
+            <h3>ENERGÍA CINÉTICA</h3>
+            <img class="img-fluid rounded w-100 mb-4" src="img/ima6.jpg" alt="Image">
+            <a href="https://www.youtube.com/watch?v=TRj99mzRjUc" target="_blank"><h3 style="color: red;">EL EXPERIMENTO SE ENCUENTRA AQUÍ</h3></a>
+            <p>La energía cinética es la energía asociada al movimiento de los objetos y depende de su masa y velocidad. Se manifiesta en situaciones cotidianas, como al patear un balón o cuando una pelota rebota en el suelo.</p>
+             <h1>MOVIMIENTOS</h1>
+            <table>
+        <tbody>
+            <tr>
+                <td> La energía cinética es un concepto básico en física que describe la energía asociada con el movimiento de los objetos. </td>
+                <td>Su importancia se manifiesta en una variedad de situaciones cotidianas, desde actividades deportivas hasta procesos tecnológicos.</td>
+                <td>La fórmula que lo define, lo que demuestra que incluso pequeños cambios de velocidad pueden dar lugar a variaciones significativas de la energía cinética. </td>
+                  <td> Este principio no sólo es importante para comprender el comportamiento de los objetos en movimiento, sino que también tiene aplicaciones prácticas en ingeniería y seguridad, destacando así la relevancia de la física en nuestra vida diaria.</td>
+            </tr>
+        </tbody>
+    </table>
+         <br>
+    </br>
+<img class="img-fluid rounded w-100 mb-4" src="img/ima7.jpg" alt="Image">
+        </div>
+    </div>
+
+    <!-- Script para mostrar las secciones -->
+    <script>
+        function showSection(section) {
+            document.getElementById('biologia').style.display = 'none';
+            document.getElementById('quimica').style.display = 'none';
+            document.getElementById('fisica').style.display = 'none';
+
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

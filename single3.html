@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Semana de la ciencia</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Animate.css (animaciones dinámicas) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Estilos para el botón con animación */
+        .btn-dinamico {
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animación al pasar el cursor */
+        .btn-dinamico:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 30px;">
+                <span class="text-primary">Semana de la ciencia 2024</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="single.html" class="nav-item nav-link">11°D</a>
+                    <a href="single2.html" class="nav-item nav-link">11°E</a>
+                    <a href="single3.html" class="nav-item nav-link">11°F</a>
+                    <a href="single4.html" class="nav-item nav-link">11°G</a>
+                    <a href="single5.html" class="nav-item nav-link">11°H</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-3 font-weight-bold text-white">La vida en la ciencia</h3>
+            <div class="d-inline-flex text-white">
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Sección de botones con animaciones -->
+    <div class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-dinamico btn-block animate__animated" onclick="showSection('biologia')">Biología</button>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-dinamico btn-block animate__animated" onclick="showSection('quimica')">Química</button>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-dinamico btn-block animate__animated" onclick="showSection('fisica')">Física</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secciones ocultas al inicio -->
+    <div class="container py-5">
+
+        <!-- Sección Biología -->
+<div id="biologia" style="display:none;">
+    <h1><center>Biología</center></h1>
+    <p><h2>El sistema inmunológico y Enfermedades en nuestra vida</h2></p>
+    <p><h4 style="color:black;">El sistema inmunológico es un complejo y fascinante sistema de defensa que protege nuestro cuerpo de una gran variedad de amenazas, desde bacterias y virus hasta células cancerosas. Esta red de células, tejidos y órganos trabaja en conjunto para identificar y eliminar los agentes patógenos invasores, manteniendo nuestro bienestar.</h4></p>
+    
+    <!-- Imagen ajustada -->
+    <img class="img-fluid rounded mb-4" src="img/biologia.jfif" alt="Image" style="width: 60%; height: auto;">
+    
+    <p><h2>Componentes principales del sistema inmunológico</h2></p>
+    <p><h4 style="color:black;">
+        El sistema inmunológico se divide en dos ramas principales: la inmunidad innata y la inmunidad adaptativa. <br>
+        • La inmunidad innata es la primera línea de defensa del cuerpo y funciona de forma general, atacando a cualquier invasor que se presente. <br>
+        • La inmunidad adaptativa, por otro lado, es específica y aprende a reconocer y combatir a los invasores individuales.
+        <br><br>
+        Inmunidad innata: La inmunidad innata está compuesta por:
+        <br>• Barreras físicas: La piel y las membranas mucosas, como las que recubren el tracto respiratorio, digestivo y urinario.
+        <br>• Células fagocíticas: Células como los neutrófilos y los macrófagos que engullen y destruyen patógenos.
+        <br>• Células NK: Células que matan células infectadas o cancerosas.
+        <br>• Proteínas del complemento: Un grupo de proteínas que ayudan a destruir patógenos y a activar otras células inmunitarias.
+    </h4></p>
+    
+    <!-- Imagen ajustada -->
+    <img class="img-fluid rounded mb-4" src="img/biologia1.jpg" alt="Image" style="width: 50%; height: auto;">
+    
+    <p><h2>Trastornos autoinmunitarios</h2></p>
+    <p><h4 style="color:black;">Un trastorno autoinmunitario ocurre cuando el sistema inmunitario ataca por error los tejidos sanos del cuerpo, afectando a más de 80 tipos de enfermedades. La causa exacta se desconoce, pero se cree que microorganismos, medicamentos o factores genéticos pueden desencadenar esta respuesta anormal.</h4></p>
+    
+    <!-- Imagen ajustada -->
+    <img class="img-fluid rounded mb-4" src="img/biologia9.jpg" alt="Image" style="width: 50%; height: auto;">
+    
+    <p><h2>Producción y función de los anticuerpos</h2></p>
+    <p><h4 style="color:black;">Los anticuerpos se pueden producir cuando el sistema inmunitario erróneamente considera el tejido sano como una sustancia dañina. Esto se denomina un trastorno autoinmunitario. <br>Cada tipo de anticuerpo es único y defiende al organismo de un tipo específico de antígeno. Los anticuerpos, también conocidos como inmunoglobulinas, son proteínas producidas por el sistema inmunológico que juegan un papel crucial en la defensa del cuerpo contra patógenos como bacterias, virus y toxinas. Son producidos principalmente por un tipo de células llamadas linfocitos B (o células B), que son un componente del sistema inmunitario adaptativo.
+        <br>En resumen, los anticuerpos son una pieza clave del sistema inmune, detectando y neutralizando amenazas, activando otras células del sistema inmunitario y contribuyendo a la protección a largo plazo mediante la memoria inmunológica.
+    </h4></p>
+    
+    <!-- Imagen ajustada -->
+    <img class="img-fluid rounded mb-4" src="img/biologia10.jpg" alt="Image" style="width: 50%; height: auto;">
+    
+    <p><h2>Respuesta inmune innata vs. Adaptativa</h2></p>
+    <p><h4 style="color: black;"><br><br>1. Ejemplos de Respuesta Inmune Innata
+Fiebre: El aumento de la temperatura corporal es una respuesta innata que ayuda a inhibir el crecimiento de patógenos.
+Inflamación: La inflamación en una zona lesionada es una señal de que el sistema inmune innato está respondiendo, permitiendo que las células inmunes lleguen rápidamente al sitio de la infección.
+<br>2. Ejemplos de Respuesta Inmune Adaptativa
+Vacunas: Funcionan entrenando el sistema adaptativo para reconocer y recordar un patógeno sin necesidad de que ocurra la infección real.
+Alergias: Son un ejemplo de una respuesta adaptativa "exagerada", donde el sistema adaptativo responde de manera inapropiada a sustancias que normalmente no son dañinas.
+<br>3. Interacción entre los dos sistemas
+La respuesta inmune innata activa a la adaptativa cuando no puede eliminar el patógeno. Las células dendríticas, por ejemplo, presentan fragmentos de patógenos a los linfocitos T, desencadenando la respuesta adaptativa.
+Ambos sistemas trabajan juntos: Mientras que la respuesta innata intenta contener la infección de inmediato, la adaptativa se encarga de eliminar el patógeno a largo plazo y generar memoria inmunológica.
+<br>4. Aplicaciones en enfermedades
+Enfermedades autoinmunes: En estos casos, el sistema inmune adaptativo ataca por error las células del propio cuerpo, como en el lupus o la artritis reumatoide.
+Inmunodeficiencias: Algunas personas tienen sistemas inmunes adaptativos debilitados (como en el VIH), lo que las hace más vulnerables a infecciones
+</h4></p>
+    <img class="img-fluid rounded mb-4" src="img/biologia12.jpg" alt="Image" style="width: 50%; height: auto;">
+    
+    <p><h2>Vacunas y su funcionamiento</h2></p>
+    <p><h4 style="color: black;"><br><br>1. Vacuna contra la hepatitis B
+   - Nombre científico: HepB
+   - Función: Previene la infección por el virus de la hepatitis B, que puede causar enfermedades hepáticas crónicas y cáncer de hígado.
+<br>2. Vacuna contra el sarampión
+   - Nombre científico: Measles, Mumps, Rubella (MMR)
+   - Función: Protege contra el sarampión, las paperas y la rubéola, enfermedades virales altamente contagiosas.
+<br>3. Vacuna contra la poliomielitis
+   - Nombre científico: IPV (Vacuna inactivada contra la poliomielitis)
+   - Función: Previene la poliomielitis, una enfermedad viral que puede causar parálisis.
+<br>4. Vacuna contra la gripe
+   - Nombre científico: Influenza vaccine
+   - Función: Protege contra las infecciones por virus de la gripe, que pueden causar enfermedades respiratorias graves.
+<br>5. Vacuna contra el tétanos
+   - Nombre científico: Td (Difteria y Tétanos)
+   - Función: Previene el tétanos, una enfermedad grave causada por una toxina bacteriana.
+<br>6. Vacuna contra el VPH (Virus del Papiloma Humano)
+   - Nombre científico: HPV vaccine
+   - Función: Previene infecciones por ciertos tipos de VPH que pueden causar cáncer cervical y otros tipos de cáncer.
+<br>7. Vacuna contra la COVID-19
+   - Nombre científico: Comirnaty (Pfizer-BioNTech), Spikevax (Moderna), entre otros.
+   - Función: Previene la infección por el virus SARS-CoV-2, que causa la COVID-19.
+<br>8. Vacuna contra la fiebre amarilla
+   - Nombre científico: Yellow Fever vaccine
+   - Función: Previene la fiebre amarilla, una enfermedad viral transmitida por mosquitos.
+</h4></p>
+    <img class="img-fluid rounded mb-4" src="img/biologia14.jpg" alt="Image" style="width: 50%; height: auto;">
+    
+    <p><h2>Memoria inmunológica y su importancia</h2></p>
+    <p><h4 style="color:black;">La memoria inmunológica es la capacidad que tiene el sistema inmune de activarse rápidamente después de un segundo encuentro con un microbio. El sistema inmune tiene la capacidad de recordar una infección y puede responder más rápido y más vigorosamente ante un segundo encuentro con algún agente infeccioso.
+        <br><br>La importancia de la memoria inmunológica incluye:
+        <br>• Respuesta más rápida: En caso de una reinfección, las células de memoria pueden identificar y combatir el patógeno más rápidamente que durante la primera exposición.
+        <br>• Mayor efectividad: La respuesta inmune es más fuerte y duradera.
+        <br>• Vacunación: La memoria inmunológica es la base de la efectividad de las vacunas, que entrenan al sistema inmunológico para reconocer y responder a patógenos específicos sin causar la enfermedad.
+        <br>• Prevención de enfermedades: Contribuye a la protección a largo plazo contra enfermedades infecciosas.
+    </h4></p>
+    
+    <!-- Imagen ajustada -->
+    <img class="img-fluid rounded mb-4" src="img/biologia18.jpg" alt="Image" style="width: 50%; height: auto;">
+
+   <div style="display: flex; justify-content: center; margin-bottom: 50px;">
+    <div style="text-align: center;">
+        <h2>Aquí nuestro experimento</h2>
+        <video class="img-fluid rounded" style="width: 80%;" controls>
+            <source src="img/biologia_11f_vid.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+</div>
+
+
+<!-- Sección Química -->
+<div id="quimica" style="display:none;">
+    <h2><center>Química</center></h2>
+    <p><h2>La química en la cocina</h2></p>
+    <p><h4 style="color:black;"><br>Es muy común escuchar la interrogante ¿Para qué nos sirve la química en la vida?, sin embargo, la Química se encuentra inmersa dentro de nuestra vida, la encontramos de manera tan cotidiana; si miramos alrededor podemos comprobar que la mayoría de los fenómenos que ocurren en nuestra vida son fenómenos químicos que se mezclan con otros elementos o materia de la naturaleza, modificando sus propiedades y creando nuevas sustancias.
+
+<p>Y sin ninguna excepción en la cocina encontramos gran variedad de reacciones químicas. La química nos ha ayudado a conocer la influencia y mezcla de distintos ingredientes dan el sabor y particularidad de nuestro platillo favorito. Transformación de los alimentos cuando se someten a procesos culinarios</p>
+
+<p>La química es el estudio de los cambios que experimenta la materia durante las reacciones químicas y su relación con la energía. La cocina es entonces un verdadero laboratorio: necesitamos modificar la composición de algunos alimentos para poder ingerirlos.</p>
+</p>
+    <img class="img-fluid rounded mb-4" src="img/quimica6.jpg" alt="Image" style="width: 50%; height: auto;">
+
+    <p><h2>¿Qué reacciones químicas se dan en la cocina?</h2></p>
+    <p><h4 style="color:black;">Estas son algunas de las reacciones químicas más comunes que se desarrollan en la cocina mediante diferentes técnicas. 
+
+<p>•   Combustión: Este proceso está muy presente en la mayoría de reacciones. Se trata de una reacción de la cocina química de oxidación, la cual tiende a desprender una gran cantidad de energía, en forma de calor y luz (fuego). Desde el punto de vista químico, existe un elemento que arde, el combustible y el que produce la combustión, el comburente, el cual genera oxígeno en forma de O2 gaseoso. </p>
+
+<p>•   Reacción de Maillard: Esta es una de las técnicas más conocidas en nuestra cocina a través de la cual se produce una reacción química. Consiste en caramelizar los hidratos de carbono aportando un color y sabor irresistible. Se suele utilizar para carnes, verduras, panes…</p>
+
+<p>•   Desnaturalización de proteínas: Las proteínas son modificadas cuando se produce un cambio en su estructura. El proceso de desnaturalización de las proteínas modifica su estructura y las rompe dando lugar a nuevos sabores y propiedades.</p>
+
+<p>Gastronomía molecular: ciencia aplicada a la cocina</p>
+
+
+<p>•   Sous Vide con roner: Esta técnica consiste en la preparación de los alimentos al vacío, para lo que se cocinan sumergidos en líquido y sin oxígeno, a temperatura muy baja durante todo el proceso, que suele ser largo.</p> 
+
+<p>•   Esferificación: Quizás una de las técnicas más conocidas y sorprendentes de la ciencia gastronómica sea la esferificación, un proceso en el que alimentos líquidos son tratados con aditivos como el alginato de sodio o similares para conseguir otorgarles más de una textura, una combinación más sólida con una más líquida.</p> 
+</p>
+    <img class="img-fluid rounded mb-4" src="img/quimica7.jpg" alt="Image" style="width: 50%; height: auto;">
+
+    <p><h2>La Respiración En la química</h2></p>
+    <p><h4 style="color:black;">La función principal del aparato respiratorio es inhalar oxígeno y eliminar dióxido de carbono. El oxígeno llega a los alvéolos en los pulmones, donde se produce el intercambio gaseoso con la sangre, que transporta oxígeno al resto del cuerpo y regresa al corazón con dióxido de carbono. Aproximadamente el 30% del oxígeno inhalado se transfiere a la sangre.
+
+<p>Los tres procesos clave para la transferencia de oxígeno son:</p>
+
+<p>Ventilación: entrada y salida de aire en los pulmones.</p>
+<p>Difusión: movimiento de gases entre los alvéolos y la sangre sin gasto energético.</p>
+<p>Perfusión: bombeo de sangre a los pulmones por el sistema cardiovascular,
+La circulación corporal conecta la atmósfera, rica en oxígeno, con las células del cuerpo que lo utilizan.</p></p>
+    <img class="img-fluid rounded mb-4" src="img/quimica9.jpg" alt="Image" style="width: 50%; height: auto;">
+  
+    <p><h2>Conservación de alimentos químico</h2></p>
+    <p><h4 style="color:black;">La conservación de alimentos mediante métodos químicos es fundamental para mantener la calidad y seguridad de los productos alimenticios. Estos procesos utilizan compuestos específicos para prevenir el deterioro, prolongar la vida útil y mejorar las propiedades sensoriales de los alimentos.
+
+<p>Importancia de la conservación de alimentos</p>
+
+<p>1.  Reducción del desperdicio: Los métodos de conservación ayudan a reducir el desperdicio de alimentos, aumentando su disponibilidad y accesibilidad.</p>
+
+<p>2.  Seguridad alimentaria: Previenen la contaminación y el crecimiento de microorganismos peligrosos, garantizando la inocuidad de los alimentos.</p>
+
+
+<p>3.  Mantenimiento de nutrientes: Algunos procesos conservan las propiedades nutricionales de los alimentos, como vitaminas y minerales.</p>
+</p>
+    <img class="img-fluid rounded mb-4" src="img/quimica13.jpg" alt="Image" style="width: 50%; height: auto;">
+ 
+    <p><h2>Principios básicos de la química de los alimentos</h2></p>
+    <p><h4 style="color:black;">•   Composición Química: Los alimentos están compuestos por carbohidratos, proteínas, lípidos, vitaminas, minerales y agua, cada uno con propiedades químicas únicas.
+
+<p>•   Reacciones Químicas: Procesos como la oxidación, hidrólisis y la reacción de Maillard afectan la calidad y estabilidad de los alimentos.</p>
+
+<p>•   Aditivos alimentarios y su función en la conservación</p>
+
+<p>•   Antioxidantes: Previenen la oxidación y el deterioro de los alimentos, manteniendo su color, sabor y valor nutricional.</p>
+
+<p>•   Conservantes: Inhiben el crecimiento de microorganismos, extendiendo la vida útil de los productos alimenticios</p>
+</p>
+    <img class="img-fluid rounded mb-4" src="img/quimica10.jpg" alt="Image" style="width: 50%; height: auto;">
+
+     <div style="display: flex; justify-content: center; margin-bottom: 50px;">
+    <div style="text-align: center;">
+        <h2>Aquí nuestro experimento</h2>
+        <video class="img-fluid rounded" style="width: 70%;" controls>
+            <source src="img/quimica_11f_vid.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+
+
+</div>
+
+
+      <!-- Sección Física -->
+<div id="fisica" style="display:none;">
+    <h2><center>Física</center></h2>
+    <p><h4 style="color:black;">La física es la ciencia que estudia las propiedades de la materia, la energía y las interacciones entre ellas. Se centra en el análisis de la materia, la energía, las fuerzas y las leyes que describen su interacción en el espacio y el tiempo. La física abarca una amplia gama de fenómenos naturales, desde los más pequeños, como las partículas subatómicas, hasta los más grandes, como las galaxias y el universo mismo.</p>
+    <p>Además, la física está profundamente entrelazada con otras ciencias, como la química, la biología y la geología. Por ejemplo, la biofísica estudia los principios físicos que subyacen en los procesos biológicos, mientras que la geoquímica utiliza los principios de la física para entender las dinámicas de la Tierra y otros planetas. En nuestra vida cotidiana, la física está presente en una amplia gama de aplicaciones: los automóviles que conducimos, los aviones que nos transportan, los teléfonos inteligentes que usamos y las fuentes de energía que alimentan nuestras casas dependen de los principios físicos. Las tecnologías modernas, desde la ingeniería hasta la medicina, se basan en el conocimiento acumulado de siglos de investigación física.</p>
+    <p>El movimiento es uno de los aspectos más fundamentales de la física y se refiere al cambio de posición de un objeto o cuerpo a lo largo del tiempo en relación con un sistema de referencia.</p>
+    <p>El estudio del movimiento se remonta a los tiempos de Aristóteles, pero fue formalizado por Isaac Newton en el siglo XVII con sus tres leyes del movimiento, que sentaron las bases de la mecánica clásica. Esto explica cómo el movimiento es un fenómeno omnipresente en la naturaleza, desde el movimiento de los planetas hasta el de las partículas subatómicas.</p>
+
+    <h4 style="color: black;">Objetivos del estudio del movimiento:</h4>
+    <ul>
+        <li><h4 style="color:black;"><strong>Describir cómo se mueven los objetos y por qué se mueven.</strong></li>
+        <li><h4 style="color:black;"><strong>Explicar las causas del movimiento.</strong></li>
+        <li><h4 style="color:black;"><strong>Formular leyes universales.</strong></li>
+    </ul>
+
+    <h2><center>La Cinemática</center></h2>
+    <h4 style="color: black;">“La física con respecto al movimiento de la materia”</h4>
+    <p><h4 style="color:black;">La cinemática es una rama de la física que describe cómo se mueven los objetos sin tener en cuenta las fuerzas que lo causan, es decir, se enfoca en describir cómo se mueven los objetos, pero no por qué se mueven de cierta manera. Para lograrlo, la cinemática utiliza diferentes variables fundamentales, como la posición, velocidad, aceleración y el tiempo, para analizar y predecir el comportamiento del movimiento. Al describir un movimiento, la cinemática permite calcular trayectorias, velocidades y aceleraciones de objetos en diversas situaciones, tanto en movimientos lineales como curvilíneos.</p>
+
+    <h4 style="color: black;"><u>Tipos de movimiento:</u></h4>
+    <p><h4 style="color:black;"><strong>Movimiento rectilíneo uniforme (MRU):</strong> es un tipo de movimiento en el cual un objeto se desplaza a lo largo de una trayectoria recta y mantiene una velocidad constante, es decir, recorre distancias iguales en intervalos de tiempo iguales.</p>
+    <p><h4 style="color:black;"><strong>Movimiento rectilíneo uniformemente acelerado (MRUA):</strong> es un tipo de movimiento en el que un objeto se desplaza en línea recta y su aceleración es constante.</p>
+    <p><h4 style="color:black;"><strong>Movimiento circular:</strong> estudia objetos que siguen trayectorias circulares, como la Tierra alrededor del Sol.</p>
+    <p><h4 style="color:black;">Fórmulas básicas:</p>
+    <p><h4 style="color:black;">Velocidad media (v = d/t)</p>
+    <p><h4 style="color:black;">Aceleración (a = Δv/Δt)</p>
+
+    <div style="text-align: center; margin-bottom: 50px;">
+        <img class="img-fluid rounded mb-4" src="img/fisica2.jpg" alt="Image" style="width: 50%; height: auto;">
+    </div>
+
+    <h2><center>La Dinámica</center></h2>
+    <p><h4 style="color:black;">La dinámica estudia las causas del movimiento, es decir, las fuerzas que actúan sobre un cuerpo. Esta disciplina se centra en comprender cómo y por qué los objetos cambian su estado de movimiento, es decir, cómo las fuerzas aplicadas afectan la velocidad, la dirección y el comportamiento de los cuerpos. La dinámica se basa en dos leyes fundamentales del movimiento, formuladas por Isaac Newton, que permiten analizar situaciones en las que intervienen fuerzas.</p>
+    <p><h4 style="color:black;"><strong>Fuerza:</strong> Es una interacción que cambia o intenta cambiar el estado de movimiento de un objeto.</p>
+
+    <p><h4 style="color:black;"><u>Clasificación de las fuerzas:</u></p>
+    <p><h4 style="color:black;"><strong>Fuerzas de Contacto:</strong> Las fuerzas de contacto son aquellas que se ejercen cuando dos objetos están en contacto físico entre sí. Estas fuerzas requieren que los cuerpos estén en contacto directo para que se produzcan, como la fricción y la tensión.</p>
+    <p><h4 style="color:black;"><strong>Fuerzas a Distancia:</strong> Las fuerzas a distancia son aquellas que actúan sobre un objeto sin necesidad de contacto físico. Se producen debido a campos de fuerza que están presentes en el espacio, como la gravedad y el electromagnetismo.</p>
+    <p><h4 style="color:black;">Fórmulas: F = ma (Fuerza = masa x aceleración).</p>
+
+    <div style="display: flex; justify-content: center; gap: 50px; margin-bottom: 50px;">
+        <img class="img-fluid rounded mb-4" src="img/fisica3.jpg" alt="Image 1" style="width: 50%; height: auto;">
+        <img class="img-fluid rounded mb-4" src="img/fisica4.jpg" alt="Image 2" style="width: 50%; height: auto;">
+    </div>
+
+    <h2><center>Primera Ley de Newton (Ley de la Inercia)</center></h2>
+    <p><h4 style="color:black;">Un objeto en reposo permanecerá en reposo, y un objeto en movimiento continuará moviéndose en línea recta a velocidad constante, a menos que una fuerza neta externa actúe sobre él.</p>
+    <p>Esta ley establece el concepto de inercia, que es la tendencia de los objetos a resistir cambios en su estado de movimiento. La inercia depende de la masa del objeto; cuanto mayor sea la masa, mayor será la inercia.</p>
+
+    <ul>
+        <li><p><h4 style="color:black;"><strong>Ejemplo:</strong> Si un libro está sobre una mesa, permanecerá allí hasta que alguien lo empuje (aplicando una fuerza). Si un automóvil se mueve a una velocidad constante en línea recta, seguirá haciéndolo hasta que se aplique una fuerza, como el freno o un choque.</p></li>
+    </ul>
+
+    <p><h4 style="color:black;"><strong>Inercia:</strong> Propiedad de los objetos de resistir cambios en su estado de movimiento.</p>
+
+    <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 50px;">
+        <img class="img-fluid rounded mb-4" src="img/fisica5.jpg" alt="Image 1" style="width: 50%; height: auto;">
+        <img class="img-fluid rounded mb-4" src="img/fisica6.jpg" alt="Image 2" style="width: 50%; height: auto;">
+    </div>
+
+    <h2><center>Segunda Ley de Newton (Fuerza y Aceleración)</center></h2>
+    <p><h4 style="color:black;">La aceleración de un objeto es directamente proporcional a la fuerza neta que actúa sobre él e inversamente proporcional a su masa. Esta relación se expresa mediante la fórmula:</p>
+    <p><strong>F = m ⋅ a</strong></p>
+    <p>donde:</p>
+    <ul>
+        <li><h4 style="color:black;">F es la fuerza neta aplicada (en Newtons),</li>
+        <li><h4 style="color:black;">m es la masa del objeto (en kilogramos),</li>
+        <li><h4 style="color:black;">a es la aceleración resultante (en metros por segundo al cuadrado).</li>
+    </ul>
+
+    <p><h4 style="color:black;">La segunda ley establece que, si se aplica una fuerza a un objeto, este experimentará una aceleración. La dirección de esta aceleración es la misma que la dirección de la fuerza neta aplicada.</p>
+
+    <ul>
+        <li><p><h4 style="color:black;"><strong>Ejemplo:</strong> Si empujas un carrito de compras (aplicando una fuerza), el carrito acelerará en la dirección en la que lo empujas. Si el carrito está vacío (menor masa), acelerará más que si está lleno (mayor masa) con la misma fuerza aplicada.</p></li>
+    </ul>
+
+    <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 50px;">
+        <img class="img-fluid rounded mb-4" src="img/fisica7.jpg" alt="Image 1" style="width: 50%; height: auto;">
+        <img class="img-fluid rounded mb-4" src="img/fisica8.jpg" alt="Image 2" style="width: 50%; height: auto;">
+    </div>
+
+    <h3><center>Tercera Ley de Newton (Acción y Reacción)</center></h3>
+    <p><h4 style="color:black;">Por cada acción, hay una reacción de igual magnitud y en sentido opuesto. Esto significa que cuando un objeto ejerce una fuerza sobre otro objeto, este último ejercerá una fuerza de igual tamaño pero en dirección opuesta.</p>
+
+    <ul>
+        <li><p><h4 style="color:black;"><strong>Ejemplo:</strong> Si te empujas contra una pared, la pared te empuja de regreso con la misma fuerza. Si un cohete se lanza, los gases calientes que salen hacia abajo ejercen una fuerza hacia abajo, mientras que el cohete recibe una fuerza hacia arriba que lo impulsa hacia el espacio.</p></li>
+    </ul>
+
+    <p><h4 style="color:black;">La tercera ley de Newton es fundamental para entender cómo funcionan las interacciones en el universo, desde el movimiento de los cuerpos celestes hasta las interacciones cotidianas.</p>
+
+    <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 50px;">
+        <img class="img-fluid rounded mb-4" src="img/fisica9.jpg" alt="Image 1" style="width: 50%; height: auto;">
+        <img class="img-fluid rounded mb-4" src="img/fisica10.png" alt="Image 2" style="width: 50%; height: auto;">
+    </div>
+     <div style="display: flex; justify-content: center; margin-bottom: 50px;">
+    <div style="text-align: center;">
+        <h2>Aquí nuestro experimento</h2>
+        <video class="img-fluid rounded w-70" controls>
+            <source src="img/fisica_11f_vid.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+
+
+ </div>
+</div>
+    <!-- Script para mostrar las secciones -->
+    <script>
+        function showSection(section) {
+            document.getElementById('biologia').style.display = 'none';
+            document.getElementById('quimica').style.display = 'none';
+            document.getElementById('fisica').style.display = 'none';
+
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

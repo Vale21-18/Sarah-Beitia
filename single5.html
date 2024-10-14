@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Semana de la ciencia</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Animate.css (animaciones dinámicas) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        p {color:black; font-family:Arial,sans-serif; font-size:18px;}
+        
+        /* Estilos para el botón con animación */
+        .btn-dinamico {
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animación al pasar el cursor */
+        .btn-dinamico:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 30px;">
+                <span class="text-primary">Semana de la ciencia 2024</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="single1.html" class="nav-item nav-link">11°D</a>
+                    <a href="single2.html" class="nav-item nav-link">11°E</a>
+                    <a href="single3.html" class="nav-item nav-link">11°F</a>
+                    <a href="single4.html" class="nav-item nav-link">11°G</a>
+                    <a href="single5.html" class="nav-item nav-link">11°H</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-3 font-weight-bold text-white"> LA CIENCIA EN ACCIÓN</h3>
+            <div class="d-inline-flex text-white">
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Sección de botones con animaciones -->
+    <div class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-dinamico btn-block animate__animated" onclick="showSection('biologia')">Biología</button>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-dinamico btn-block animate__animated" onclick="showSection('quimica')">Química</button>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-dinamico btn-block animate__animated" onclick="showSection('fisica')">Física</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secciones ocultas al inicio -->
+    <div class="container py-5">
+        <!-- Sección Biología -->
+        <div id="biologia" style="display:none;">
+           <h1>Biología</h1><br>
+          <center> <iframe width="560" height="315" src="https://www.youtube.com/embed/3G-ObJe6QEA?si=K8gf5J8tQen37yo-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </center><br><br>
+                     <p>Este experimento fue elaborado por un grupo de 7 estudiantes. Mostramos cómo poder ver el ADN (Ácido Desoxirribonucleico), sin necesidad de un microscopio o utensilios de laboratorio, utilizamos el etanol porque es insolible y hace que el ADN flote, el etanol debe estar frío para evitar que se mezcle con el agua.
+                        NUESTRA EXPERIENCIA 
+                     para nosotros cómo grupo fue una experiencia muy divertida ya que trabajamos en equipo y descubrimos algo nuevo.
+                 </p>
+                    <h3 class="mb-4">Explicacion teorica del experimento</h3>
+                    <img class="img-fluid rounded w-50 float-right ml-4 mb-3" src="https://i.ibb.co/WDRcYnQ/0da1ac92-ad0a-4a9c-a90d-f482498a7586.jpg" alt="0da1ac92-ad0a-4a9c-a90d-f482498a7586">
+                    <p>
+                      Todos los seres vivos tenemos genes, las fresas también! Los genes son las unidades de almacenamiento de la información genética, segmentos de ADN que contienen la información sobre cómo deben funcionar las células del organismo. Los genes tienen elementos que indican de dónde a dónde se ha de leer y su contenido determina la composición de las proteínas que se han de formar.
+
+                      Las fresas son ideales para hacer este experimento por dos motivos: son la fruta con la que se obtiene más cantidad de ADN y, además, son octoploides, es decir, tienen ocho juegos idénticos de cromosomas (las células humanas son diploides, es decir, tienen dos juegos de cromosomas a excepción de los gametos). Estas circunstancias hacen que el ADN de la fresa sea fácil de extraer y de ver.
+
+                      En cuanto a los componentes presentes en la solución de extracción: el jabón ayuda a disolver las membranas celulares y se añade la sal para romper las cadenas de proteínas que unen los ácidos nucleicos liberando las cadenas de ADN. Finalmente, se utiliza el alcohol porque el ADN es insoluble y aún menos si este está frío.
+
+                      El ADN será la sustancia blanquecina que observaremos en nuestra mezcla </p>
+                       <img height="250" width="450" src="https://i.ibb.co/ckBKpKz/cefcdcf2-1b80-4e74-9a0b-28000c416c16.jpg" alt="cefcdcf2-1b80-4e74-9a0b-28000c416c16">
+                    
+        </div>
+
+        <!-- Sección Química -->
+        <div id="quimica" style="display:none;">
+           <h2>Química</h2> <br><br>
+          <center>  <iframe width="560" height="315" src="https://www.youtube.com/embed/BCrvv-qBfXM?si=QXwl0BJ999phDEWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center><br><br>
+                    <p>El Grupo de química está compuesto de 7 estudiantes. Nosotros mostramos la salida de el Dióxido de Carbono con ayuda de una pastilla efervescente y como el aceite y el agua no se logran unir en uno solo en ningún momento.
+ Experiencia Grupal. 
+Tuvimos ciertos problemas ya que el experimento a primera instancia no funcionó pero logramos hacerlo. Fue frustrante y a la vez divertido, emocionante ver como nuestro experimento si funcionaba y descubrimos la necesidad del trabajo en equipo.
+                 </p>
+                   <br><br> <h3 class="mb-4">Explicacion teorica del experimento</h3>
+                    <img class="img-fluid rounded w-50 float-right ml-4 mb-3"src="https://i.ibb.co/YfPVGqF/49cac50b-9e3a-4549-82d2-b9b69052361f.jpg" alt="49cac50b-9e3a-4549-82d2-b9b69052361f" height="600" >
+                    <p>
+                          El bicarbonato de sodio cuando se disuelve en el agua se separa en iones de sodio e iones de bicarbonato. Los iones se hidrolizan liberando CO2 que es el causante de las “burbujas” de colores. Cuando la lava es menos densa que el agua en la que se encuentra flota y se eleva a la superficie, mientras que cuando la lava es más densa, cae y se hunde al fondo de la lámpara. Estas burbujas son menos densas que el aceite por lo que se mueven hacia arriba creando así el efecto de la lámpara de lava.</p>
+ 
+                          <p>El experimento de la lámpara de lava  casera es una actividad simple y divertida que muestra la interacción entre líquidos de diferentes densidades y el efecto de reacciones químicas. Aunque no es una verdadera lámpara de lava como las comerciales, produce un efecto visual similar.  
+
+
+    
+                          Densidad: El aceite y el agua no se mezclan porque tienen diferentes densidades y polaridades. El agua es más densa y queda en el fondo.
+
+                          Reacción química: Al añadir la pastilla efervescente, se produce una reacción química que libera dióxido de carbono, formando burbujas. Estas burbujas arrastran pequeñas cantidades de agua coloreada a través del aceite. Cuando las burbujas llegan a la superficie, el gas se disipa, y el agua vuelve al fondo.
+
+
+                          Este experimento es ideal para demostrar conceptos de química básica, como la densidad de los líquidos y las reacciones químicas, además de ser visualmente llamativo.</p>
+        </div>
+
+        <!-- Sección Física -->
+        <div id="fisica" style="display:none;">
+         <h3>Física</h3><br><br>
+          <center>  <iframe width="560" height="315" src="https://www.youtube.com/embed/kaXUFMYMidE?si=temOBX8F2qRIRYVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </center>
+
+            <BR><BR> <h1>Física del Tsunami </h1><br><p>
+                            Un tsunami es una serie de olas comúnmente causada por un terremoto debajo del lecho marino. A medida que los tsunamis entran en aguas menos profundas cerca de la tierra, aumentan su altura y pueden causar innumerables víctimas y daños a la propiedad al llegar a la costa.
+                            Tomar un vaso resistente al fuego y agregar un poco de alcohol. Con mucho cuidado, los padres deben encender el fuego y luego deben introducir rápidamente el envase en agua. Se observará cómo se crea una explosión de agua dentro del vaso. Esto representa la fuerza del tsunami.
+                            </p> <br><br>
+                        
+          
+                        
+                          <center> <img  src="https://i.ibb.co/zr8Gs9G/da9a69c1-1620-4a77-8b64-6bb5ecfe3940.jpg" alt="da9a69c1-1620-4a77-8b64-6bb5ecfe3940"  height="300" width="500"> </center><br><br><br> 
+
+                           <img class="img-fluid rounded w-50 float-right ml-4 mb-3" src="https://i.ibb.co/VmkQZNc/7d3c5da2-d9a1-49e2-9db8-d6dec6a6d889.jpg" alt="7d3c5da2-d9a1-49e2-9db8-d6dec6a6d889">
+                  
+                           <h1>Fluido Newtoniano</h1><br> <p>
+                            Cuando aplicamos una fuerza sobre este fluido (una mezcla de almidón de maíz y agua) se comporta como un sólido, pero cuando no aplicamos ninguna fuerza se comporta como un líquido. Esto sucede porque es un fluido no newtoniano. Cuando sobre este fluido no se aplica ninguna fuerza o tensión, sus partículas no se ordenan y se comportan como un líquido y su viscosidad baja. En cambio, cuando se aplica una tensión las partículas enredan formando redes, porque no tienen tiempo de organizarse y como consecuencia la viscosidad aumenta. El fluido se comporta entonces como un sólido..</p><br>  
+
+                              <img  src="https://colegiorafaelamaria.b-cdn.net/wp-content/uploads/2021/05/primaria_colegio_concertado_centro_valladolid-1-2.jpg" alt="Image" width="450" height="250"> <br><br>
+
+                              <p> Como hemos explicado, un fluido no newtoniano es aquél cuya viscosidad varía con la temperatura y la tensión cortante que se le aplica. Por tanto, no tiene un valor de viscosidad definido y constante, y no se comportan como fluidos (normalmente líquidos) comunes. Su nombre proviene del hecho de que no cumplen con la ley de Newton sobre la viscosidad debido, precisamente, a que esta ley considera al líquido con una viscosidad constante. Al contrario, al ejercer presión o cambiar la temperatura, estos fluidos se parecen más a sólidos que a los líquidos. Así, un fluido no newtoniano puede ser recogido con los dedos como si de un objeto sólido se tratase. Sin embargo, al dejar de ejercer esta presión se convierte, de nuevo, en un fluido líquido, escurriéndose en las manos.</p>
+        </div>
+    </div>
+
+    <!-- Script para mostrar las secciones -->
+    <script>
+        function showSection(section) {
+            document.getElementById('biologia').style.display = 'none';
+            document.getElementById('quimica').style.display = 'none';
+            document.getElementById('fisica').style.display = 'none';
+
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
